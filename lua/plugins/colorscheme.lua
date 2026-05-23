@@ -12,7 +12,7 @@ return {
           light = "latte",
           dark = "mocha",
         },
-        transparent_background = false,
+        transparent_background = true,
         dim_inactive = {
           enabled = true,
           shade = "dark",
@@ -20,10 +20,9 @@ return {
         },
         custom_highlights = function(colors)
           return {
-            Normal = { bg = "#050505" },
-            NormalNC = { bg = "#050505" },
-            NormalFloat = { bg = "#050505" },
-            FloatBorder = { bg = "#050505", fg = colors.surface2 },
+            NormalNC = { bg = "NONE" },
+            NormalFloat = { bg = "NONE" },
+            FloatBorder = { bg = "NONE", fg = colors.surface2 },
           }
         end,
         integrations = {

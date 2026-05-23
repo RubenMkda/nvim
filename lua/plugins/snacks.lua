@@ -1,7 +1,14 @@
 return {
   {
     "folke/snacks.nvim",
+    keys = {
+      { "<C-a>",    function() Snacks.terminal.toggle() end, desc = "Open Terminal",  mode = { "n", "t" } },
+      { "<C-Down>", function() Snacks.terminal.toggle() end, desc = "Open Terminal",  mode = { "n", "t" } },
+      { "<C-z>",    "<C-\\><C-n>:close<CR>",                desc = "Hide Terminal",  mode = "t" },
+      { "<C-z>",    ":close<CR>",                            desc = "Hide Terminal",  mode = "n" },
+    },
     opts = {
+      terminal = { enabled = true },
       dashboard = {
         width = 60,
         row = nil,
