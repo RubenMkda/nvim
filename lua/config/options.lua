@@ -19,8 +19,7 @@ if vim.fn.has("wsl") == 1 then
   }
   vim.opt.clipboard = "unnamedplus"
 end
-vim.env.OPENAI_API_KEY =
-  "REMOVED_API_KEY"
+-- Set OPENAI_API_KEY in your shell profile (~/.bashrc or ~/.zshrc), not here
 
 -- WSL terminal
 if vim.fn.has("wsl") == 1 then
